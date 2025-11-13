@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Pulsegram — скоро запуск</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #7433FF, #3D9EFF, #00E0FF);
+        background-size: 400% 400%;
+        animation: gradientMove 12s ease infinite;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #ffffff;
+        overflow: hidden;
+    }
+
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .container {
+        animation: fadeIn 2s ease;
+    }
+
+    .title {
+        font-size: 58px;
+        font-weight: 800;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+        opacity: 0.9;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div class="title">Pulsegram</div>
+    <div class="subtitle">Скоро появится новый проект 👀</div>
+</div>
+</body>
+</html>
